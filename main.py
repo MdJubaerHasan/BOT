@@ -108,7 +108,7 @@ async def on_message(message):
             encouragements = db["encouragements"]
         await message.channel.send(encouragements)
 
-    # Set respond on/off
+    # Set respond on/off/status
     if msg.startswith("*responding"):
         value = msg.split("*responding ", 1)[1]
         if value.lower() == "on":
@@ -117,9 +117,12 @@ async def on_message(message):
         elif value.lower() == "off":
             db["responding"] = False
             await message.channel.send('not responding! :thumbsup: ')
+        elif value == "?":
+            await message.channel.send(db["responding"])
         else:
-            db["responding"] = False
+          db["responding"] = False
 
+          
     if db["responding"]:
 
         # send motivational quotes

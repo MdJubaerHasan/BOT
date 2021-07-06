@@ -10,7 +10,7 @@ from awake import keep_alive
 client = discord.Client()
 
 # *****----------- Responds -----------*****
-mad_words = ['pissed', 'mad', 'fuck', 'stupid', 'retarded', 'curse']
+mad_words = ['pissed', 'mad', 'retarded', 'curse']
 mad_emotes = ['🤬', '😡', '😠', '😾']
 sad_words = ['sad', 'depressed', 'sucks', 'feeling sick', 'sad life', 'cry']
 sad_emotes = ['😞', '😦', '😔', '😟', '🙁', '😭', '😢', '🥺', '😩', '😫', '😖', '😣', '😿']
